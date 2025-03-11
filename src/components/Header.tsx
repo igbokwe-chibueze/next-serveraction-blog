@@ -40,7 +40,7 @@ export default function Header() {
           {navLinks.map((link) => (
             <li key={link.href}>
               <Link
-                className={`${
+                className={` p-3 rounded-md hover:bg-zinc-300 hover:text-zinc-900 transition-colors duration-400 ${
                   pathname === link.href ? "text-zinc-900" : "text-zinc-400"
                 }`}
                 href={link.href}
